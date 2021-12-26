@@ -1,0 +1,95 @@
+.skills{
+    padding-top: 126px;
+    &__skills{
+        position: relative;
+        text-align: center;
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -25%;
+            left: 551px;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background: #8FBC8F;
+        }
+    }
+    &__subtitle{
+        text-align: center;
+        &::after{
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #8fbc8f;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+    }
+    &__img{
+        width: 70px;
+        height: 70px;
+    }
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        gap: 13px;
+    }
+    &__item{
+        border: 1px solid #000000;
+        padding: 38px 29px 25px 30px;
+    }
+    &__title{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    p{
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__progress{
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__name{
+        position: relative;
+        padding-left: 13px;
+        padding-top: 2px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -25%;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background: #8FBC8F;
+        }
+    }
+    &__rectangle{
+        margin-top: 27px;
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        div{
+            background: #FFA501;
+            height: 14px;
+            border-radius: 4px;
+        }
+    }
+}
