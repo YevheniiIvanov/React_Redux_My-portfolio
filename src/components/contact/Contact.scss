@@ -1,6 +1,5 @@
 .contact{
-    padding-top: 120px;
-    margin-bottom: 40px;
+    padding: 120px 0 40px 0 ;
     &__container{
         width: 1320px;
         margin: 0 auto;
@@ -30,7 +29,7 @@
         position: relative;
         margin-top: 42px;
         display: grid;
-        grid-template: 45px 190px 45px / repeat(2, 280px);
+        grid-template: 45px 190px 45px / repeat(2, 1fr);
         justify-content: space-between;
         row-gap: 27px;
         column-gap: 20px;
@@ -49,8 +48,9 @@
     &__input {
         position: relative;
         input{
-            padding: 0 20px;
-            width: 240px;
+            box-sizing:border-box;
+            padding: 10px 20px;
+            width: 100%;
             height: 100%;
             font-size: 14px;
         }
@@ -59,11 +59,12 @@
         position: relative;
         grid-column: 1 / 3;
         textarea {
+            box-sizing:border-box;
+            padding: 20px;
             width: 100%;
             height: 100%;
-            resize: none;
-            // padding: 10px;
             font-size: 14px;
+            resize: none;
         }
     }
     &__btn {
@@ -106,9 +107,6 @@
             grid-template-columns: 400px 520px;
             column-gap: 25px;
         }
-        &__form {
-            grid-template: 45px 190px 45px / repeat(2, 250px);
-        }
     }
 }
 @media (max-width: 992px) {
@@ -118,9 +116,11 @@
         }
         &__wrapper {
             grid-template-columns: 300px 400px;
+            column-gap: 15px
         }
         &__form {
-            grid-template: 45px 190px 45px / repeat(2, 195px);
+            grid-column: 15px;
+            row-gap: 15px;
         }
         &__btn {
             padding: 8px 25px;
@@ -130,7 +130,7 @@
 }
 @media (max-width: 768px) {
     .contact{
-        padding-top: 50px;
+        padding-top: 50px 0 40px 0;
         &__container{
             width: 540px;
         }
@@ -140,9 +140,6 @@
         &__wrapper {
             grid-template-columns: 1fr;
         }
-        &__form {
-            grid-template: 45px 190px 45px / repeat(2, 250px);
-        }
     }
 }
 @media (max-width: 576px) {
@@ -150,12 +147,47 @@
         &__container{
             width: 400px;
         }
+        &__social{
+            grid-template-columns: 30px 30px 30px 190px;
+            gap: 11px;
+        }
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+            row-gap: 25px;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triger {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 315px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+        .about__title::before {
+            top: -33%;
+        }
     }
 }
 @media (max-width: 425px) {
     .contact{
         &__container{
             width: 100vw;
+        }
+        &__descr{
+            margin-left: 15px;
+            margin-right: 15px;
         }
     }
 }

@@ -109,6 +109,9 @@
         &__link{
             font-size: 12px;
         }
+        .promo__subtitle::before {
+            top: -15%;
+        }
     }
 }
 @media (max-width: 425px) {

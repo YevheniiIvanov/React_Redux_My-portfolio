@@ -94,6 +94,9 @@
         &__container{
             width: 1140px;
         }
+        .portfolio__title::before {
+            left: 520px;
+        }
     }
 }
 @media (max-width: 1200px) {
@@ -103,6 +106,9 @@
         }
         &__wrapper{
             row-gap: 4px;
+        }
+        .portfolio__title::before {
+            left: 430px;
         }
     }
 }
@@ -147,6 +153,9 @@
                 grid-column: 1 / 3;
                 grid-row: 2 / 3;
             }
+        }
+        .portfolio__title::before {
+            left: 300px;
         }
     }
 }
@@ -193,9 +202,8 @@
             }
         }
         .portfolio__title::before {
-            left: 250px;
+            left: 210px;
         }
-        
     }
 }
 @media (max-width: 576px) {
@@ -206,12 +214,18 @@
         &__wrapper{
             gap: 15px;
         }
+        .portfolio__title::before {
+            left: 141px;
+        }
     }
 }
 @media (max-width: 425px) {
     .portfolio{
         &__container{
             width: 100vw;
+        }
+        .portfolio__title::before {
+            left: 102px;
         }
     }
 }

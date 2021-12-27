@@ -16,8 +16,9 @@ const Hamburger = () => {
             {hamburger === true ? <Menu/> : null}
             <div className="hamburger" onClick={() => dispatch(portfolioHamburger(true))}>
                 <span style={blackColor}></span>
-                <span className="long" style={blackColor}></span>
                 <span style={blackColor}></span>
+                <span style={blackColor}></span>
+                
             </div>
             
         </>

@@ -18,8 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <SidePanel/> */}
-      {/* <Hamburger/> */}
+      <SidePanel/>
+      <Hamburger/>
       <Promo/>
       <About/>
       <Skills/>

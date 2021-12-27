@@ -115,12 +115,20 @@
         &__container{
             width: 400px;
         }
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 }
 @media (max-width: 425px) {
     .about{
         &__container{
             width: 100vw;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 22px;
         }
     }
 }
