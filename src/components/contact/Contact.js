@@ -48,7 +48,7 @@ const Contact = () => {
                     {formStatus === 'idle' ? <SuccessMessage/> : null}
                     {formStatus === 'error' ? <ErrorMessage/> : null}
 
-                    <div className="container">
+                    <div className="contact__container">
                         <div className="contact__wrapper">
                             <div className="contact__photo">
                                 <img src={contact} alt="contact"/>

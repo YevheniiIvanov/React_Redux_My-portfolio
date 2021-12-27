@@ -13,7 +13,7 @@ const Portfolio = () => {
     return(
         <>
             <section className="portfolio" id="portfolio-href">
-                <div className="container">
+                <div className="portfolio__container">
                     <h2 className="title title__fz16 portfolio__title lang-portfolio-work">Portfolio</h2>
                     <div className="title title__fz36 portfolio__subtitle lang-my-work">My works</div>
                     <div className="portfolio__wrapper">

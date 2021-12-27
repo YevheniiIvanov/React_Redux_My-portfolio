@@ -1,10 +1,14 @@
 .contact{
     padding-top: 120px;
     margin-bottom: 40px;
+    &__container{
+        width: 1320px;
+        margin: 0 auto;
+    }
     &__wrapper{
         display: grid;
         grid-template-columns: 400px 585px;
-        justify-content: start;
+        justify-content: center;
         column-gap: 68px;
         img{
             width: 100%;
@@ -81,6 +85,77 @@
         align-items: center;
         input{
             margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .contact{
+        &__container{
+            width: 1140px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .contact{
+        &__container{
+            width: 960px;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+            column-gap: 25px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .contact{
+        &__container{
+            width: 720px;
+        }
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 195px);
+        }
+        &__btn {
+            padding: 8px 25px;
+            line-height: 16px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contact{
+        padding-top: 50px;
+        &__container{
+            width: 540px;
+        }
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contact{
+        &__container{
+            width: 400px;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .contact{
+        &__container{
+            width: 100vw;
         }
     }
 }

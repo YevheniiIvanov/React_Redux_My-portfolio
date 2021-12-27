@@ -20,7 +20,7 @@ const Skills = () => {
         <>
             <Fade bottom>
                 <section className="skills" id="sills-href">
-                    <div className="container">
+                    <div className="skills__container">
                         <h2 className="title title__fz16 skills__skills lang-skills">Skills</h2>
                         <div className="title title__fz36 skills__subtitle lang-use">What do I use in my work</div>
 

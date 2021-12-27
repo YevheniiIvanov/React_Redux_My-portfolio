@@ -7,9 +7,9 @@ import './About.scss';
 const About = () => {
     return(
         <>
-            <Fade bottom>
+            {/* <Fade bottom> */}
                 <section className="about" id="about-me">
-                    <div className="container">
+                    <div className="about__container">
                         <div className="about__wrapper">
                             <Zoom left cascade duration={1000}>
                                 <div className="about__photo">
@@ -34,7 +34,7 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-            </Fade>
+            {/* </Fade> */}
             
         </>
     )

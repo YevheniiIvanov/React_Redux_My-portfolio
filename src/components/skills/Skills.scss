@@ -1,5 +1,9 @@
 .skills{
     padding-top: 126px;
+    &__container{
+        width: 1320px;
+        margin: 0 auto;
+    }
     &__skills{
         position: relative;
         text-align: center;
@@ -34,8 +38,10 @@
     &__wrapper{
         margin-top: 60px;
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(4, 270px);
-        gap: 13px;
+        grid-auto-flow: row;
+        gap: 20px;
     }
     &__item{
         border: 1px solid #000000;
@@ -52,44 +58,64 @@
         font-size: 12px;
         line-height: 18px;
     }
-    &__progress{
-        margin-top: 120px;
-        display: grid;
-        grid-template-columns: repeat(3, 350px);
-        column-gap: 45px;
-        row-gap: 30px;
-    }
-    &__name{
-        position: relative;
-        padding-left: 13px;
-        padding-top: 2px;
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 21px;
-        &::before{
-            content: '';
-            position: absolute;
-            z-index: -1;
-            top: -25%;
-            left: 0;
-            width: 36px;
-            height: 36px;
-            border-radius: 100%;
-            background: #8FBC8F;
+}
+
+@media (max-width: 1400px) {
+    .skills{
+        &__container{
+            width: 1140px;
         }
     }
-    &__rectangle{
-        margin-top: 27px;
-        width: 350px;
-        height: 14px;
-        background: #E8E4DE;
-        border-radius: 4px;
-        div{
-            background: #FFA501;
-            height: 14px;
-            border-radius: 4px;
+}
+@media (max-width: 1200px) {
+    .skills{
+        &__container{
+            width: 960px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(3, 270px);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .skills{
+        padding-top: 40px;
+        &__container{
+            width: 720px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(3, 230px);
+            gap: 10px;
+        }
+        &__item{
+            padding: 25px 20px 20px 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .skills{
+        &__container{
+            width: 540px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(1, 230px);
+        }
+    }
+}
+@media (max-width: 576px) {
+    .skills{
+        &__container{
+            width: 400px;
+        }
+        .skills__skills::before {
+            left: 182px;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .skills{
+        &__container{
+            width: 100vw;
         }
     }
 }
