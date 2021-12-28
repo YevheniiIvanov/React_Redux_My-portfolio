@@ -8,16 +8,18 @@ import Portfolio from '../portfolio/Portfolio';
 import Contact from '../contact/Contact';
 
 import { portfolioScroll } from '../portfolio/portfolioSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import PageUp from '../page-up/PageUp';
 
 function App() {
-
+  const {scrollWin} = useSelector(state => state.portfolio);
   const dispatch = useDispatch();
 
   window.addEventListener("scroll", () => dispatch(portfolioScroll(window.scrollY)));
 
   return (
     <div className="App">
+      {scrollWin >= window.innerHeight ? <PageUp/> : null}
       <SidePanel/>
       <Hamburger/>
       <Promo/>

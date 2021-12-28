@@ -1,6 +1,5 @@
 import contact from './contact400-600.jpg';
 import { useRef, useState } from 'react';
-// import emailjs from 'emailjs-com';
 import { Fade } from 'react-reveal';
 import { useDispatch, useSelector } from 'react-redux';
 import { postFormEmail, portfolioFormStatus } from '../portfolio/portfolioSlice';
