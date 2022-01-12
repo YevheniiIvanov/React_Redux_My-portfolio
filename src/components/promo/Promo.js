@@ -25,7 +25,7 @@ const Promo = () => {
                                 </Zoom>
                                 <br/>
                                 <Zoom left cascade>
-                                    from Chenstohowa
+                                    from Chęstohowa
                                 </Zoom>
                             </h1>
                             <div className="promo__btn">

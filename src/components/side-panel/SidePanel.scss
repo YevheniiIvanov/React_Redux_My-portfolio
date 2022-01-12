@@ -25,7 +25,17 @@
             color: #ffffff;
         }
     }
+    &__linkedin{
+        transform: rotate(-90deg);
+        width: 20px;
+        height: 20px;
+    }
 }
+
+.link{
+    fill: white;
+}
+
 .black path{
     fill: black;
 }

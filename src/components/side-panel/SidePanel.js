@@ -13,10 +13,8 @@ const SidePanel = () => {
     return(
         <>
             <aside className="sidepanel">
-                <a href="https://www.facebook.com/profile.php?id=100012550484095" target="_blank" rel="noopener noreferrer" className="sidepanel__link">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-7.46167e-07 2.92969L-1.28061e-07 17.0703C-5.74539e-08 18.6856 1.31439 20 2.92969 20L17.0703 20C18.6856 20 20 18.6856 20 17.0703L20 11.1719L12.9297 11.1719L12.9297 13.5156L9.41406 13.5156L9.41406 11.1719L7.03125 11.1719C5.09262 11.1719 3.51562 9.59488 3.51562 7.65625L3.51562 4.10156L7.03125 4.10156L7.03125 7.65625L9.41406 7.65625L9.41406 4.10156L12.9297 4.6875L12.9297 7.65625L20 7.65625L20 2.92969C20 1.31439 18.6856 -8.16774e-07 17.0703 -7.46167e-07L2.92969 -1.28061e-07C1.31439 -5.74539e-08 -8.16774e-07 1.31439 -7.46167e-07 2.92969Z" fill="white" style={blackFill}/>
-                    </svg>
+                <a href="https://www.linkedin.com/in/yevhenii-ivanov-648276213" target="_blank" rel="noopener noreferrer" className="sidepanel__link">
+                    <svg fill="white" style={blackFill} className='sidepanel__linkedin' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
                 <a href="https://www.instagram.com/Yevhenii__Ivanov/" target="_blank" rel="noopener noreferrer" className="sidepanel__link">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
